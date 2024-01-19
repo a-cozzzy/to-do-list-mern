@@ -8,3 +8,13 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 this is my commit
+
+frontend
+npm create vite@latest
+    cd todolist
+    npm install
+    npm run dev
+
+npm install axios react-icons
+
+rfce
