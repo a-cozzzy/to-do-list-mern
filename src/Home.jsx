@@ -2,6 +2,7 @@ import React,{useEffect, useState} from 'react'
 import Create from './Create'
 import axios from 'axios'
 import { BsCircleFill , BsFillCheckCircleFill, BsFillTrashFill} from "react-icons/bs";
+import Createnotes from './Createnotes';
 
  
 function Home() {
@@ -30,6 +31,7 @@ function Home() {
 
   return (
     <div className='home'>
+        <div className='todohome'>
         <h2>To Do List </h2>
         <Create/>
     {
@@ -50,7 +52,12 @@ function Home() {
                 </div>   
             </div>
         ))
-    }
+    }</div>
+
+    <div className='noteshome'>
+        <h2>Notes</h2>
+        <Createnotes/>
+    </div>
         </div>
   )
 }

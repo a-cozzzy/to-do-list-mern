@@ -1,10 +1,20 @@
 .home{
-  display:flex;
-  flex-direction: column;
+  /* display:flex;
+  flex-direction: column; */
   align-items: center;
   border: black;
-  
+  display: grid;
+  padding-left: 100px;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 20px;
+
 }
+
+.todohome{
+  border-color: black;
+  border: black;
+}
+
 
 .create_form input{
   width:300px;
@@ -13,13 +23,35 @@
   outline: none;
 }
 
-.create_form button{
+#txtbox {
+  font-size: 14pt;
+  height: 100px;
+  width : 300px;
+  padding: 10px;
+  border-bottom: 2px solid;
+  outline: none;
+}
+
+
+
+.create_form button {
   padding: 10px;
   background-color: black;
   color: aliceblue;
   cursor: pointer;
 
 }
+
+.create_notes button{
+  padding: 10px;
+  background-color: black;
+  color: aliceblue;
+  cursor: pointer;
+
+
+}
+
+
 
 .task{
   display: flex;
