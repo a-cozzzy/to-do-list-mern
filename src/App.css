@@ -1,42 +1,88 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.home{
+  /* display:flex;
+  flex-direction: column; */
+  align-items: center;
+  border: black;
+  display: grid;
+  padding-left: 100px;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 20px;
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.todohome{
+  border-color: black;
+  border: black;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.create_form input{
+  width:300px;
+  padding: 10px;
+  border-bottom: 2px solid;
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#txtbox {
+  font-size: 14pt;
+  height: 100px;
+  width : 300px;
+  padding: 10px;
+  border-bottom: 2px solid;
+  outline: none;
 }
 
-.card {
-  padding: 2em;
+
+
+.create_form button {
+  padding: 10px;
+  background-color: black;
+  color: aliceblue;
+  cursor: pointer;
+
 }
 
-.read-the-docs {
-  color: #888;
+.create_notes button{
+  padding: 10px;
+  background-color: black;
+  color: aliceblue;
+  cursor: pointer;
+
+
+}
+
+
+
+.task{
+  display: flex;
+  align-items: center;
+  width: 345px;
+  justify-content: space-between;
+  background-color: black;
+  color: aliceblue;
+  height: 35px;
+  padding: 2px 5px 2px 5px;
+  margin-top: 2px;
+}
+
+.checkbox{
+  display: flex;
+  align-items: center;
+}
+
+.line_through{
+  text-decoration: line-through;
+}
+
+.checkbox .icon{
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.task div span{
+  margin: 0px 5px 0px 4px;
+}
+
+.task div .icon{
+  cursor: pointer;
 }
